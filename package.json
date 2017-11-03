@@ -4,5 +4,8 @@
   "main": "index.js",
   "repository": "https://github.com/koellcode/webdriver-io-demo.git",
   "author": "Thomas Kölling <thomas.koellling@check24.de>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "webdriverio": "^4.8.0"
+  }
 }
