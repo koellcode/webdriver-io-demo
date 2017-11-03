@@ -1,2 +1,6 @@
 require("babel-register");
-require("./pages/google");
+require("./runner")
+  .run()
+  .catch(function(error) {
+    console.log("ERROR", error);
+  });

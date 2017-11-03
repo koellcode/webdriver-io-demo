@@ -1,16 +1,9 @@
-import { remote } from "webdriverio";
+// import your pageobject here
 
-const options = {
-  desiredCapabilities: {
-    browserName: "chrome"
-  }
+// define scraper flow here
+export default async browser => {
+  const page = browser.url("http://www.google.com");
+  const title = await page.getTitle();
+  await page.end();
+  return { title };
 };
-
-remote(options)
-  .init()
-  .url("http://www.google.com")
-  .getTitle()
-  .then(title => {
-    console.log(`Title was: ${title}`);
-  })
-  .end();
