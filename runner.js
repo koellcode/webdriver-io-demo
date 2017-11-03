@@ -13,6 +13,7 @@ export async function run() {
   for (const page of pages) {
     const browser = remote(options).init();
     const result = await page(browser);
+    await browser.end();
     console.log(result);
   }
 }

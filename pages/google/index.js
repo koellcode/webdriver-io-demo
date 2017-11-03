@@ -4,6 +4,5 @@
 export default async browser => {
   const page = browser.url("http://www.google.com");
   const title = await page.getTitle();
-  await page.end();
   return { title };
 };
