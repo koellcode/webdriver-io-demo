@@ -10,9 +10,9 @@ const options = {
 };
 
 export async function run() {
-  for (const page of pages) {
+  for (const scrape of pages) {
     const browser = remote(options).init();
-    const result = await page(browser);
+    const result = await scrape(browser);
     await browser.end();
     console.log(result);
   }

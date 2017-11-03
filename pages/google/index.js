@@ -1,8 +1,8 @@
-// import your pageobject here
+import Page from "./page";
 
 // define scraper flow here
 export default async browser => {
-  const page = browser.url("http://www.google.com");
-  const title = await page.getTitle();
+  const page = new Page(browser);
+  const title = await page.title();
   return { title };
 };
