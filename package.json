@@ -1,0 +1,8 @@
+{
+  "name": "webdriver-io-demo",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/koellcode/webdriver-io-demo.git",
+  "author": "Thomas Kölling <thomas.koellling@check24.de>",
+  "license": "MIT"
+}
